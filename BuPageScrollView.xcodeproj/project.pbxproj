@@ -16,6 +16,10 @@
 		0DC718E924A452EF009A0A4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC718E824A452EF009A0A4F /* main.m */; };
 		0DC718F324A452F0009A0A4F /* BuPageScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC718F224A452F0009A0A4F /* BuPageScrollViewTests.m */; };
 		0DC718FE24A452F0009A0A4F /* BuPageScrollViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC718FD24A452F0009A0A4F /* BuPageScrollViewUITests.m */; };
+		0DC7191324A45311009A0A4F /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC7190B24A45310009A0A4F /* CustomViewController.m */; };
+		0DC7191424A45311009A0A4F /* BuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC7190C24A45310009A0A4F /* BuViewController.m */; };
+		0DC7191524A45311009A0A4F /* SampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC7190D24A45310009A0A4F /* SampleController.m */; };
+		0DC7191624A45311009A0A4F /* BuScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC7190F24A45310009A0A4F /* BuScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,14 @@
 		0DC718F924A452F0009A0A4F /* BuPageScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuPageScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DC718FD24A452F0009A0A4F /* BuPageScrollViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuPageScrollViewUITests.m; sourceTree = "<group>"; };
 		0DC718FF24A452F0009A0A4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DC7190B24A45310009A0A4F /* CustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
+		0DC7190C24A45310009A0A4F /* BuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuViewController.m; sourceTree = "<group>"; };
+		0DC7190D24A45310009A0A4F /* SampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleController.m; sourceTree = "<group>"; };
+		0DC7190E24A45310009A0A4F /* BuScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuScrollView.h; sourceTree = "<group>"; };
+		0DC7190F24A45310009A0A4F /* BuScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuScrollView.m; sourceTree = "<group>"; };
+		0DC7191024A45310009A0A4F /* SampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleController.h; sourceTree = "<group>"; };
+		0DC7191124A45310009A0A4F /* BuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuViewController.h; sourceTree = "<group>"; };
+		0DC7191224A45311009A0A4F /* CustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +116,7 @@
 		0DC718D524A452ED009A0A4F /* BuPageScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				0DC7191724A45315009A0A4F /* ScrollView */,
 				0DC718D624A452ED009A0A4F /* AppDelegate.h */,
 				0DC718D724A452ED009A0A4F /* AppDelegate.m */,
 				0DC718D924A452EE009A0A4F /* SceneDelegate.h */,
@@ -135,6 +148,21 @@
 				0DC718FF24A452F0009A0A4F /* Info.plist */,
 			);
 			path = BuPageScrollViewUITests;
+			sourceTree = "<group>";
+		};
+		0DC7191724A45315009A0A4F /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				0DC7190E24A45310009A0A4F /* BuScrollView.h */,
+				0DC7190F24A45310009A0A4F /* BuScrollView.m */,
+				0DC7191124A45310009A0A4F /* BuViewController.h */,
+				0DC7190C24A45310009A0A4F /* BuViewController.m */,
+				0DC7191224A45311009A0A4F /* CustomViewController.h */,
+				0DC7190B24A45310009A0A4F /* CustomViewController.m */,
+				0DC7191024A45310009A0A4F /* SampleController.h */,
+				0DC7190D24A45310009A0A4F /* SampleController.m */,
+			);
+			path = ScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,9 +296,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DC718DE24A452EE009A0A4F /* ViewController.m in Sources */,
+				0DC7191524A45311009A0A4F /* SampleController.m in Sources */,
+				0DC7191624A45311009A0A4F /* BuScrollView.m in Sources */,
+				0DC7191324A45311009A0A4F /* CustomViewController.m in Sources */,
 				0DC718D824A452ED009A0A4F /* AppDelegate.m in Sources */,
 				0DC718E924A452EF009A0A4F /* main.m in Sources */,
 				0DC718DB24A452EE009A0A4F /* SceneDelegate.m in Sources */,
+				0DC7191424A45311009A0A4F /* BuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +407,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -427,7 +459,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
